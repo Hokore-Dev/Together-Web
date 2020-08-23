@@ -13,14 +13,13 @@
     "@vue/cli-plugin-babel": "^3.0.1",
     "@vue/cli-plugin-eslint": "^3.0.1",
     "@vue/cli-service": "^3.12.1",
+    "vue-template-compiler": "^2.5.17",
     "axios": "^0.18.1",
     "vue": "^2.5.17",
     "vue-router": "^3.0.1",
     "vuex": "^3.0.1"
   },
-  "devDependencies": {
-    "vue-template-compiler": "^2.5.17"
-  },
+  "devDependencies": {},
   "eslintConfig": {
     "root": true,
     "env": {
