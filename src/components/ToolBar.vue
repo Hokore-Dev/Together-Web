@@ -1,9 +1,13 @@
 <template>
-  <div class="header" :class="{ 'fixed': isFixed }" ref="appHeader">
-    <img src="../assets/logo.svg" alt="logo" class="logo">
-    <router-link to="/news">News</router-link> |
-    <router-link to="/ask">Ask</router-link> |
-    <router-link to="/jobs">Jobs1</router-link>
+  <!-- fixed 코드 -->
+  <!-- :class="{ 'fixed': isFixed }" -->
+  <div class="header-wrapper" ref="appHeader">
+    <div class="header-content">
+      <img src="../assets/logo.svg" alt="logo" class="logo">
+      <router-link to="/news">News</router-link> |
+      <router-link to="/ask">Ask</router-link> |
+      <router-link to="/jobs">Jobs</router-link>
+    </div>
   </div>
 </template>
 
@@ -31,17 +35,23 @@ export default {
 </script>
 
 <style scoped>
-.header {
+.header-wrapper {
   background-color: #42b883;
+  border-bottom: 1px solid #42b223;
   color: white;
-  padding: 8px 8px 8px 25px;
-  display: flex;
-  align-items: center;
+  height: 96px;
+  z-index: 999;
+  text-align: center;
 }
-.header a:visited {
+.header-content {
+  display: inline-block;
+  width: 1200px;
+  text-align: left;
+}
+.header-content a:visited {
   color: white;
 }
-.header a:active {
+.header-content a:active {
   color: #35495e;
 }
 .fixed {

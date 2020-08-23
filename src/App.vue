@@ -40,8 +40,19 @@ export default {
 </script>
 
 <style>
+#app {
+    /* background: #f3f4f8; */
+    /* min-width: 1200px */
+}
+
+#app,.container {
+    /* position: relative */
+}
+
 body {
   margin: 0;
+  /* min-height: 100%; */
+  /* min-width: 100%; */
 }
 
 a {
