@@ -1,0 +1,9 @@
+{
+	"name":"short-news-app",
+	"version":"1.0.0",
+	"description":"none",
+	"author":"none",
+	"private":true,
+	"script": {
+	}
+}
