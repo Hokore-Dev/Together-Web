@@ -3,7 +3,7 @@
     <img src="../assets/logo.svg" alt="logo" class="logo">
     <router-link to="/news">News</router-link> |
     <router-link to="/ask">Ask</router-link> |
-    <router-link to="/jobs">스티브123 Jobs</router-link>
+    <router-link to="/jobs">Jobs</router-link>
   </div>
 </template>
 
