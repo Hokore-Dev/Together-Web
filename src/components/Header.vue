@@ -10,7 +10,7 @@
       </div>
       <div class="header-tab">
         <img src="../assets/logo.svg" alt="logo" class="logo">
-        <p class="title">Short News.com</p>
+        <p class="title">ShortNews.com</p>
         <router-link to="/news">뉴스</router-link> |
         <router-link to="/ask">질문</router-link> |
         <router-link to="/jobs">일</router-link>

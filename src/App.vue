@@ -5,11 +5,13 @@
     <transition name="routing-fade" mode="out-in">
       <router-view></router-view>
     </transition>
+    <bottom></bottom>
   </div>
 </template>
 
 <script>
-import ToolBar from './components/ToolBar.vue';
+import ToolBar from './components/Header.vue';
+import Bottom from './components/Footer.vue';
 // import ProgressBar from './components/ProgressBar.vue';
 import Spinner from './components/Spinner.vue';
 import bus from './utils/bus.js';
@@ -17,6 +19,7 @@ import bus from './utils/bus.js';
 export default {
   components: {
     ToolBar,
+    Bottom,
     Spinner,
   },
   data() {
