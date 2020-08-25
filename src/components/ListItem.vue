@@ -49,7 +49,7 @@ export default {
 .points {
   width: 80px;
   height: 60px;
-  color: #42b883;
+  color: #121a34;
   display: flex;
   align-items: center;
   justify-content: center;

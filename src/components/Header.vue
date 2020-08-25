@@ -2,18 +2,17 @@
   <div class="header-wrapper" ref="appHeader">
     <div class="header-content">
       <div class="header-top">
-      <p class="time">UTC+09:00, 2020년 08월 24일 월요일</p>
+      <p class="time">UTC+09:00, 2020년 08월 25일 화요일</p>
       <div class="user">
-        <button>로그인</button>
-        <button>회원가입</button>
+        
       </div>
       </div>
       <div class="header-tab">
         <img src="../assets/logo.svg" alt="logo" class="logo">
-        <p class="title">ShortNews.com</p>
-        <router-link to="/news">뉴스</router-link> |
-        <router-link to="/ask">질문</router-link> |
-        <router-link to="/jobs">일</router-link>
+        <p class="title">TestCommunity.com</p>
+        <router-link to="/news">뉴스피드</router-link>
+        <router-link to="/ask">리서치</router-link>
+        <router-link to="/jobs">시세</router-link>
       </div>
     </div>
   </div>
@@ -26,14 +25,14 @@ export default {
 
 <style scoped>
 .header-wrapper {
-  background-color: #42b883;
-  border-bottom: 1px solid #42b223;
+  background-color: #121a34;
+  border-bottom: 1px solid #232a4a;
   color: white;
   top: 0;
   z-index: 999;
   display: flex;
   justify-content: center;
-  position: sticky;
+  position: relative;
 }
 .header-content {
   display: flex;
@@ -61,10 +60,8 @@ export default {
   text-decoration: none;
   cursor: pointer;
 }
-.header-top .user button {
-  margin: 0px 5px 0px 5px;  
-}
 .header-top .time {
+  color: #c7cce6;
   font-size: 0.9em;
 }
 .header-tab {
@@ -72,6 +69,7 @@ export default {
   justify-content: flex-start;
   align-items:baseline;
   margin-top: 10px;
+  margin-bottom: 10px;
 }
 .header-tab a:visited {
   color: white;
@@ -81,7 +79,7 @@ export default {
 }
 .header-tab a.router-link-active {
   text-decoration: none;
-  color: blanchedalmond;
+  color: #a1b7ff;
 }
 .fixed {
   position: fixed;
