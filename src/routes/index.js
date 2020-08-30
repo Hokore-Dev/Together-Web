@@ -1,6 +1,10 @@
 import Vue from 'vue';
 import VueRouter from 'vue-router';
-import { ItemView, UserView } from '../views';
+import {
+  ItemView,
+  UserView,
+  EditorView,
+} from '../views';
 import createListView from '../views/CreateListView';
 import bus from '../utils/bus.js';
 import store from '../store/index.js';
@@ -9,10 +13,9 @@ Vue.use(VueRouter);
 
 export default new VueRouter({
   mode: 'history',
-  routes: [
-    {
+  routes: [{
       path: '/',
-      redirect: '/news' 
+      redirect: '/news'
     },
     {
       path: '/news',
@@ -68,6 +71,10 @@ export default new VueRouter({
           .then(() => next())
           .catch(err => new Error('failed to fetch user profile', err));
       },
+    },
+    {
+      path: "/editor",
+      component: EditorView
     }
   ]
 })

@@ -14,7 +14,7 @@
     </div>
 
     <div class="topic">
-      <router-link to="/news">와인 모임</router-link>
+      <router-link to="/editor">와인 모임</router-link>
       <router-link to="/news">양주 모임</router-link>
     </div>
   </div>
